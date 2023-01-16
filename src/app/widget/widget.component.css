@@ -116,6 +116,7 @@ align-items: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .pdLF{
@@ -241,6 +242,10 @@ li p{
     height: 35px;
     position: absolute;
     bottom: 20px;
+}
+
+.sendMess:hover{
+    opacity: 0.9;
 }
 
 .center{

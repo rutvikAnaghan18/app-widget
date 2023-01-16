@@ -3,10 +3,12 @@
         <div class="widgetButton" (click)="widget()">
             <i class="fa-brands fa-google"></i>
         </div>
+
+        <!-- MAIN APP CONTAINER -->
         <div class="appContent" *ngIf="buttonClicked">
 
+            <!-- APP HOME PAGE -->
             <div class="main-content homeCont" *ngIf="home">
-
                 <div class="header pdLF">
                     <i class="fas fa-phone-alt" style="cursor: pointer;"></i>
                 </div>
@@ -16,6 +18,7 @@
                     <p class="font_new" style="margin: 0px 0px;">How can we help?</p>
                 </div>
 
+                <!-- CARDS -->
                 <div class="cards pdLF">
                     <div class="card">
                         <img src="../../assets/5884945.jpg" class="card-img-top" alt="...">
@@ -41,6 +44,7 @@
                 </div>
             </div>
 
+            <!-- MESSAGE CONTAINER -->
             <div class="main-content messCont" *ngIf="message">
                 <div class="header pdLF mess">
                     Messages
@@ -64,6 +68,7 @@
                 </div>
             </div>
 
+            <!-- CONVERSATION PAGE -->
             <div class="main-content messCont messageMainBox" *ngIf="messageBox">
                 <div class="header pdLF backBtn" (click)="messageClick()">
                     <i class="fa-solid fa-chevron-left" style="width: 15px;"></i>
@@ -83,6 +88,7 @@
                 </div>
             </div>
 
+            <!-- APP FOOTER -->
             <div class="footer" *ngIf="home || message">
                 <div class="footerButtons">
                     <div class="home column widthBtn" (click)="homeClick()">
