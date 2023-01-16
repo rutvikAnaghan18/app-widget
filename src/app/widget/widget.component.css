@@ -320,6 +320,10 @@ li p{
     background-color: rgb(229, 238, 255);
 }
 
+.msBtn:hover{
+    background-color: rgb(224, 234, 255);
+}
+
 .messages{
     background-color: white;
     height: 100%;
