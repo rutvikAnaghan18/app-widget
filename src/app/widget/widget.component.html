@@ -1,0 +1,104 @@
+<div class="mainContainer widthHeight">
+    <div class="widgetContainer">
+        <div class="widgetButton" (click)="widget()">
+            <i class="fa-brands fa-google"></i>
+        </div>
+        <div class="appContent" *ngIf="buttonClicked">
+
+            <div class="main-content homeCont" *ngIf="home">
+
+                <div class="header pdLF">
+                    <i class="fas fa-phone-alt" style="cursor: pointer;"></i>
+                </div>
+
+                <div class="welcome pdLF">
+                    <p class="font_new" style="margin: 0px 0px;">Hello There.</p>
+                    <p class="font_new" style="margin: 0px 0px;">How can we help?</p>
+                </div>
+
+                <div class="cards pdLF">
+                    <div class="card">
+                        <img src="../../assets/5884945.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card mg-top">
+                        <img src="../../assets/5884945.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card mg-top mg-botm">
+                        <img src="../../assets/5884945.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content messCont" *ngIf="message">
+                <div class="header pdLF mess">
+                    Messages
+                </div>
+                <div class="messages">
+                    <ul class="messLine" style="border: none;">
+                        <li><i class="fa-solid fa-laptop iconWidth"></i></li>
+                        <li>
+                            <p class="text rm-mrg" style="margin-bottom: 0px !important; white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis; width: 95%;">Hello There, How Can i Help You With My Service</p>
+                            <p class="info rm-mrg" style="margin-bottom: 0px !important;">Admin * 2d ago</p>
+                        </li>
+                        <li><i class="fa-solid fa-chevron-right"></i></li>
+                    </ul>
+                </div>
+                <div class="sendMess">
+                    <div class="center" (click)="messageBoxClick()">
+                        Send Message&nbsp;<i class="fas fa-paper-plane" style="width: 13px;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content messCont messageMainBox" *ngIf="messageBox">
+                <div class="header pdLF backBtn" (click)="messageClick()">
+                    <i class="fa-solid fa-chevron-left" style="width: 15px;"></i>
+                </div>
+                <div class="header pdLF messBox">
+                    Intercom
+                </div>
+                <div class="mainMessages">
+                    <button class="msBtn">Just Browsing</button>
+                    <button class="msBtn">I'd like to learn more about Intercom</button>
+                    <button class="msBtn">I'm an Intercom customer with a question</button>
+                </div>
+                <div class="messageInput">
+                    <input type="text" class="mgInp form-control" placeholder="Type Something...." style="border:none;">
+                    <i class="fas fa-smile" style="color: #71777d; width: 20px; cursor: pointer;"></i>&nbsp; &nbsp;
+                    <i class="fas fa-paper-plane" style="width: 20px; color: rgb(0, 87, 255); cursor: pointer;"></i>
+                </div>
+            </div>
+
+            <div class="footer" *ngIf="home || message">
+                <div class="footerButtons">
+                    <div class="home column widthBtn" (click)="homeClick()">
+                        <i class="fas fa-home-alt"></i>
+                    </div>
+                    <div class="message column widthBtn" (click)="messageClick()">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="home column widthBtn" (click)="homeClick()">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </div>
+                    <div class="message column widthBtn" (click)="messageClick()">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

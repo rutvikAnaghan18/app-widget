@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
+
+.widthHeight {
+    height: 100vh;
+    width: 100vh;
+}
+
+.widgetContainer{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    max-height: 570px;
+    max-width: 350px;
+    width: auto;
+    height: auto;
+}
+
+.widgetButton{
+    position: absolute;
+    right: 0px;
+    background: #0342FF;
+    background: -webkit-linear-gradient(top left, #0342FF, #E1EFF0);
+    background: -moz-linear-gradient(top left, #0342FF, #E1EFF0);
+    background: linear-gradient(to bottom right, #0342FF, #6c98c2);
+    bottom: 0px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.svg-inline--fa{
+    margin-top: 2px;
+    height: 30px;
+    width: 35px;
+    color: white;
+}
+
+.appContent{
+    box-shadow: 2px 2px 17px 1px;
+    bottom: 66px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    height: 570px;
+background: #0342FF;
+background: -webkit-linear-gradient(top left, #0342FF, #E1EFF0);
+background: -moz-linear-gradient(top left, #0342FF, #E1EFF0);
+background: linear-gradient(to bottom right, #0342FF, #E1EFF0);
+    border-radius: 12px;
+    overflow-y: scroll;
+}
+
+.footerButtons{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer{
+    position: sticky;
+    bottom: -1px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    left: 0px;
+    z-index: 9999;
+    background-color: #f3f5f7;
+    box-shadow: 0px 12px 30px 1px;
+}
+
+.widthBtn{
+    width: 50%;
+    height: 100%;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-house{
+    color: #272647;
+    width: 20px;
+}
+
+.fa-envelope{
+    color: #272647;
+    width: 20px;
+}
+
+.fa-user-plus{
+    color: #272647;
+    width: 20px;
+}
+
+.fa-circle-info{
+    color: #272647;
+    width: 20px;
+}
+
+.welcome{
+    margin-top: 10px;
+    color: white;
+}
+
+.font_new{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.pdLF{
+    padding-top: 13px;
+    padding-left: 15px;
+    padding-right: 13px;
+}
+
+.card{
+    cursor: pointer;
+    border-radius: 17px;
+    overflow: hidden;
+}
+
+.card:hover{
+    opacity: 0.9;
+}
+
+.mg-top{
+    margin-top: 16px;
+}
+
+.mg-botm{
+    margin-bottom: 16px;
+}
+
+.home , .message{
+    cursor: pointer;
+    font-size: 12.5px
+}
+
+.messCont{
+    width: 100%;
+    height: 100%;
+}
+
+.mess{
+    height: 50px;
+    background-color: rgb(0, 87, 255);;
+    color: #f3f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+
+ul li{
+    text-decoration: none;
+    list-style: none;
+    padding: 6px;
+}
+
+.fa-chevron-right{
+    width: 10px;
+}
+
+.messLine{
+    display: flex;
+    margin-left: 0px;
+    padding-left: 2px;
+    border: 2px solid;
+    background: #f3f5f7;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.messages :hover{
+    background-color: #e9e9e9;
+}
+
+.iconWidth{
+    width: 20px;
+}
+
+rm-mrg{
+    margin: 0px;
+    padding: 0px;
+}
+
+li p{
+    font-size: 12.5px;
+}
+
+.fa-laptop{
+    color: black;
+}
+
+.fa-chevron-right{
+    color: black;
+}
+
+.messCont{
+    position: relative;
+    animation: myfirst 0.4s;
+    animation-direction:unset;
+}
+
+@keyframes myfirst {
+    0%   {left: -370px; top: 0px;}
+    100% {left: 0px; top: 0px;}
+}
+
+.homeCont{
+    position: relative;
+    animation: homeContFirst 0.4s;
+    animation-direction:unset;
+}
+
+@keyframes homeContFirst {
+    0%   {left: 370px; top: 0px;}
+    100% {left: 0px; top: 0px;}
+}
+
+.appContent::-webkit-scrollbar {
+    display: none;
+}
+
+.sendMess{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.center{
+    height: 100%;
+    background-color: rgb(0, 87, 255);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.messBox{
+    height: 40px;
+    background-color: rgb(0, 87, 255);;
+    color: #f3f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.backBtn{
+    height: 40px;
+    background-color: rgb(0, 87, 255);;
+    color: #f3f5f7;
+    cursor: pointer;
+}
+
+.messageMainBox{
+    background-color: rgb(255 255 255);
+}
+
+.mgInp:focus-visible{
+    border: none !important;
+}
+
+.form-control:focus {
+    box-shadow:none;
+}
+.mgInp{
+    width: 78%;
+    border: 2px solid black;
+}
+.messageInput{
+    display: flex;
+    width: 100%;
+    height: 51px;
+    position: absolute;
+    bottom: 0px;
+    justify-content: center;
+    box-shadow: 0px 12px 30px 1px;
+    align-items: center;
+}
+
+.mainMessages{
+    width: 100%;
+    height: 421px;
+    display: flex;
+    flex-direction: column;
+}
+
+.msBtn{
+    padding: 5px;
+    width: fit-content;
+    border: none;
+    border-radius: 8px;
+    margin-left: 10px;
+    height: 35px;
+    font-size:13.5px;
+    margin-top: 10px;
+    color: rgb(0, 52, 153);
+    background-color: rgb(229, 238, 255);
+}
+
+.messages{
+    background-color: white;
+    height: 100%;
+}
